@@ -1,0 +1,1035 @@
+
+/* ==UserStyle==
+@name           Arxiv Gruvbox Dark
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("https://arxiv.org/") {
+
+
+
+
+    :root
+
+{
+    /* 0 is for darkest 
+    1 is for hard 
+    higher values for hard  */
+
+
+    /* 2.1 Dark theme color variables */
+    --bg0-dh:       #1d2021;
+    --bg-dark-new  :  #1F1E1D ; 
+/*For basic text new color added  	 */
+--text-normal :#ffd29c ;
+
+    --shadow-bg:         #1d1b1a;
+    
+    --bg1-dark:       #3c3836;
+    --bg-dark:        #282828;
+    --bg2-dark:       #504945;
+    --bg3-dark:       #665c54;
+    --bg4-dark:       #7c6f64;
+    --bg5-dark:       #928374;
+    --bg_visual:      #503946;
+    --bg_red:         #cc241d;
+    --bg_green:       #98971a;
+    --bg_blue:        #458588;
+    --bg_yellow:      #d79921;
+    --shadow:         #16181a;
+    --shadow-var1:         #17191b;
+    --shadow-cur:         #1a1b1d;
+
+    --fg-dark:        #ebdbb2;
+    --grey0-dark:     #7f897d;
+    --grey1-dark:     #859289;
+    --grey2-dark:     #9aa79d;
+
+    --faded-red:     #fb4934;
+    --faded-orange:  #fe8019;
+    --faded-yellow:  #fabd2f;
+    --faded-green:   #b8bb26;
+    --faded-aqua:    #8ec07c;
+    --faded-blue:    #83a598;
+    --faded-purple:  #d3869b;
+
+    --dim-red:       #cc241d;
+    --dim-orange:    #d65d0e;
+    --dim-yellow:    #d79921;
+    --dim-green:     #98971a;
+    --dim-aqua:      #689d6a;
+    --dim-blue:      #458588;
+    --dim-purple:    #b16286;
+
+
+    /* 2.2 Light theme color variables */
+    --bg0-light:     #f0edd8;
+    --bg1-light:     #f6f1dd;
+    --bg-light:      #fdf6e3;
+    --bg2-light:     #f3efda;
+    --bg3-light:     #edead5;
+    --bg4-light:     #e4e1cd;
+    --bg5-light:     #dfdbc8;
+    --grey0-light:   #a4ad9e;
+    --grey1-light:   #939f91;
+    --grey2-light:   #879686;
+    --shadow-light:  #3c474d20;
+
+
+    --text-offwhite: #fbf1c7;
+    --text-offyellowish: #f2e5bc;
+    --text-white: #f9f5d7;
+    --text-offwhite-faded: #ebdbb2;
+    --text--faded: #d5c4a1;
+    --text--veryfade: #928374;
+
+    
+
+    
+
+
+
+    --bg_visual_light:      #eaedc8;
+    --bg_red_light:         #fbe3da;
+    --bg_green_light:       #f0f1d2;
+    --bg_blue_light:        #e9f0e9;
+    --bg_yellow_light:      #faedcd;
+
+    --fg-light:       #5c6a72;
+
+    --light-red:     #f85552;
+    --light-orange:  #f57d26;
+    --light-yellow:  #bf983d;
+    --light-green:   #899c40;
+    --light-aqua:    #569d79;
+    --light-blue:    #5a93a2;
+    --light-purple:  #b87b9d;
+
+    --light-dim-red:    #f1706f;
+    --light-dim-orange: #f39459;
+    --light-dim-yellow: #e4b649;
+    --light-dim-green:  #a4bb4a;
+    --light-dim-aqua:   #6ec398;
+    --light-dim-blue:   #6cb3c6;
+    --light-dim-purple: #e092be;
+
+
+
+ --dark-red: #9d0006;    
+  --dark-green: #79740e;  
+  --dark-yellow: #b57614; 
+  --dark-blue: #076678;   
+  --dark-purple: #8f3f71;
+  --dark-aqua: #427b58; 
+  --dark-orange: #af3a03;
+
+
+  --interface-light0-hard: #f9f5d7; 
+  --interface-light0: #fbf1c7; 
+  --interface-light0-soft: #f2e5bc; 
+  --interface-light1: #ebdbb2; 
+  --interface-light2: #d5c4a1;
+  --interface-light3: #bdae93; 
+  --interface-light4: #a89988;
+
+
+ 
+	
+	
+	}
+
+	
+
+	
+	
+	
+	/*Category page*/
+	
+
+
+	/*Other identiry */
+div#cu-identity * {
+  background-color: #282828 !important;
+  color: #928374 !important;
+	/*no need of border here */
+	border: none !important ;
+}
+	
+	
+	/*logo div */
+	div#cu-logo {
+  background-color: #282828 !important;
+}
+
+div.banner-minimal.forum {
+  background-color: #2ecc71 !important;
+  color: #ffd29c00 !important;
+}
+
+div#support-ack {
+  background-color: #282828 !important;
+  color: #b8bb26 !important;
+}
+	
+		
+	/*The link on the top most stuff */
+	div.column.banner-minimal.forum {
+  /* Target the container */
+  font-size: 0px; /* Reduce font size */
+}
+
+div.column.banner-minimal.forum a {
+  /* Target the link (button) */
+  font-size: 12px; /* Reduce font size */
+  padding: 5px 10px; /* Reduce padding */
+  border-radius: 5px; /* Add rounded corners */
+	opacity: 0 !important; 
+}
+	
+	
+	
+	/*Search buttons */
+	/*search buttons */
+		button.button.is-small.is-cul-darker {
+  /* Background color */
+  background-color: #ffd29c !important;
+  /* Text color */
+  color: #fb4934 !important;
+}
+
+button.button.is-small.is-cul-darker:hover {
+  /* Background color on hover */
+  background-color: #fb4934 !important;
+  /* Text color on hover */
+  color: #ffd29c !important;
+	transition: background  0.3s ease-in-out !important ; 
+}
+	
+	/*Search button input background */
+	.search-block .input {
+		background : #282828 !important ;
+		border: solid 1px #d5c4a1  !important ; 
+		border-radius: 6px !important ; 
+}
+	
+	/*Hover for search button */
+		.search-block .input:hover{
+		background : #1d1b1a !important ;
+		border: solid 1px #fb4934  !important ; 
+			transition: background 0.9s ease-in-out !important ; 
+}
+	
+	/*placeholder for the search button on the second header */
+	input.input.is-small::placeholder {
+  	color: #98971a  !important;
+}
+	
+	/*All Fields button style */
+	select[name="searchtype"] {
+  /* Border color */
+  border-color:  #83a598 !important;
+  /* Background color */
+  background-color: #282828 !important;
+  /* Text color */
+  color: #98971a !important;
+  /* Font size */
+  font-size: 12px !important;
+  /* Padding */
+  padding: 2px 10px 2px 10px  !important;
+  /* Border radius */
+  border-radius: 6px !important;
+}
+	
+	/*Hover in the field button */
+	select[name="searchtype"]:hover {
+  /* Background color on hover */
+  background-color: #1d2021 !important;
+  /* Border color on hover */
+  border-color: #fb4934 !important;
+  /* Transition effect */
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
+}
+	
+	
+	
+
+	
+	
+	
+	
+	/*Header under the border */
+	
+	#header {
+    background-color: #1d1b1a !important;
+    color: #fe8019 !important;
+    padding: 7px 0 7px 0;
+    border-bottom: 2px solid #427b58;
+    position: relative;
+    overflow: auto;
+}
+
+	/*Header links color in the second header */
+	#header a, #header a:visited {
+    color: #fe8019 !important;
+}
+	
+	/*Content background */
+	#content, #content-inner , body {
+    background: #1a1b1d !important ; 
+}
+	
+	
+	
+	/*Page contents */
+	/*heading  H1 */
+	
+	h1{
+		color : #83a598 !important  ; 
+	}
+	
+	
+	/*hover add hover here */
+	
+	/*Heading 2 h2 */
+	h2{
+		color : #98971a !important ; 
+	}
+	
+	/*Heading 3 */
+	h3 {
+		color : #fe8019 !important ; 
+	}
+
+		h4 {
+		color : #83a598 !important ; 
+	}
+
+	
+	/*List markers */
+	li::marker{
+		color : #689d6a !important ; 
+	}
+	
+	
+	
+	/*First line names */
+	div.paging , div.morefewer {
+		color : #fbf1c7 !important; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	/*LINKS*/
+	
+	/*color of links */
+	/*new font added for the links */
+	/* 
+		font-family: "Margon360W08-Medium" !important;
+	*/
+	
+	a{
+		color : #fb4934  !important ; 
+		font-family: "Margon360W08-Medium" !important;
+		padding : 0px 12px 0px 12px !important ;
+		
+	
+
+	}
+	
+	/*hover for links */
+		a:hover{
+		color : #b8bb26  !important ; 
+			background : #282828 !important ; 
+		font-family: "Margon360W08-Medium" !important;
+			/*border for the links */
+		border : solid 2px  #d5c4a1 !important ; 
+		border-radius: 8px !important ; 
+		text-decoration : none !important ;
+		transition: color 0.5s ease-in-out  !important ; 
+
+	}
+	
+	/*Links when visited */
+		a:visited{
+		color : #928374  !important ; 
+		font-family: "Margon360W08-Medium" !important;
+
+	}
+
+	
+	
+	/*Paragraphs*/
+	p {
+		color : #d5c4a1 !important ; 
+		font-family: "Margon360W08-Medium" !important;
+		font-size: 1rem !important ; 
+	}
+	
+	/*Title of the papers */
+	#dlpage .list-title {
+
+		color : #b8bb26 !important ;
+		font-family: "jetbrains mono" !important ; 
+		font-weight: 800 !important ; 
+}
+	
+	/*hover for the title of papers */
+	
+		#dlpage .list-title:hover{
+		color : #fe8019 !important ;
+		font-family: "jetbrains mono" !important ; 
+		font-weight: 800 !important ; 
+			transition: color 0.4s ease-in-out !important; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*AUTHORS*/
+	/*Authors  links change */
+	div.list-authors a {
+		
+ 		color : #928374  !important ; 
+		font-family: "margon360w08-medium" !important;
+		padding : 0px 12px 0px 12px !important ;
+	}
+	
+	
+	/*Authors names hover for the link */
+	div.list-authors a:hover {
+		
+ 		color : #fe8019  !important ; 
+			background : #16181a !important ; 
+		font-family: "Margon360W08-Medium" !important;
+			/*border for the links */
+		border : solid 2px  #928374 !important ; 
+		border-radius: 8px !important ; 
+		text-decoration : none !important ;
+		transition: color 0.5s ease-in-out  !important ;
+	}
+	
+	
+	/*Arxiv Links color and format color*/
+	/*arxiv link color */
+	
+	dt {
+		color : #f2e5bc !important ; 
+	}
+	dt a {
+		color : #fb4934 !important ; 
+	}
+	
+	/*Links arxiv hover */
+	 dt a:hover{
+		color : #83a598  !important ; 
+			background : #1f1e1d !important ; 
+		font-family: "Margon360W08-Medium" !important;
+			/*border for the links */
+		border : solid 2px  #928374 !important ; 
+		border-radius: 8px !important ; 
+		text-decoration : none !important ;
+		transition: color 0.5s ease-in-out  !important ; 
+
+	}
+	
+	
+	
+	/*Comments under the thing */
+	#dlpage .list-comments {
+color : #928374 !important ; 
+}
+	
+	
+	/*SUbjects (categories )  */
+	#dlpage .list-subjects {
+	color : #83a598 !important ;
+	}
+	
+	
+	/*Journal reference */
+	#dlpage .list-journal-ref {
+color : #83a598 !important ; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Footer */
+	/*bottom container */
+	footer {
+    background-color: #16181a !important ;
+    color: #b8bb26 !important;
+    padding: 0.5em 1em !important;
+    font-size: 0.9rem !important;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*Icons */
+	/*SVG*/
+	svg{
+		fill : #fe8019 !important ; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*PDF intereresting */
+	/*DOMAIN -> SUB DOMAIN (heading ) */
+	#abs-outer .subheader h1 {
+   color : #fe8019 !important ; 
+		background: #16181a !important ; 
+		border : none !important ; 
+}
+	/*Heading background (domain and sub domain) */
+	#abs-outer .subheader {
+    background-color: #1d1b1a;
+    color: #ffd29c;
+    padding: .25em 0;
+    border-bottom: 2px solid #689d6a;
+}
+	
+	
+	
+	/*date of the submisson */
+	
+	#abs div.dateline {
+color : #b8bb26 !important ; 
+		font-family: "Jetbrains Mono" !important ; 
+		font-weight: 700 !important ;
+}
+	
+	
+	
+	
+	/*ABSTRACT*/
+	#abs blockquote.abstract {
+    background-color: #1a1b1d !important;
+		padding: 1rem !important ; 
+		border-radius: 8px !important ; 
+		border: solid 2px #8ec07c !important ; 
+		color : #ebdbb2 !important ; 
+		font-family: "Margon360W08-Medium" !important;
+    font-size: 1.18em;
+}
+	
+	
+	
+	
+	/*ACESS Paper border */
+	/*SIDE BAR */
+	.extra-services{
+    border-bottom:  solid  1px #fabd2f !important ;
+}
+
+	/*border change */
+	.full-text {
+    border-bottom:  solid  1px #fabd2f !important ;
+}
+	
+	
+	/*border change */
+	.browse {
+    border-bottom:  solid  1px #fabd2f !important ;
+		color  : #b8bb26 !important ; 
+}
+	/*change border color*/
+	.extra-ref-cite {
+    border-bottom:  solid  1px #fabd2f !important ;
+}
+	
+	/*Export bibtex citatons  */
+	#abs-outer .extra-services span.bib-cite-button {
+    color: #fe8019;
+}
+	
+	
+	
+	
+	/*METADATA under the ABSTRACT*/
+	#abs div.metatable  , #abs-outer .submission-history {
+    font-size: 0.95em !important;
+    color : #fe8019 !important ; 
+}
+	
+	
+	/*LABELS*/
+	/*Buttons  under the abstract */
+	#labstabs .labstabs input[type="radio"]:checked + label {
+    background: #1d1b1a !important;
+    border: 1px solid #7c6f64 !important;
+    color: #fabd2f !important;
+}
+	
+	/*labels > non  active buttons */
+	#labstabs .labstabs > label {
+    font-size: .85em;
+    color: #ffd29c;
+    border: 1px solid #504945 !important;
+    font-weight: 500  !important;
+    transition: background ease 0.2s;
+    border-radius: 6px 6px 0 0;
+    background-color: #3c3836;
+}
+	
+	
+	/*meta data */
+	#labstabs .toggle {
+    border: 1px solid #fb4934 !important;
+		border-radius: 7px !important ; 
+    padding: .5em;
+    background-color: #1a1b1d !important;
+}
+	/*emphassize (brackerts)*/
+	em {
+		color : #fe8019 !important  ; 
+font-family: "Margon360W08-Medium" !important ; 
+	}
+	
+	
+	/*buttons > labels titles */
+	#labstabs .toggle .columns.lab-row .column {
+	color : #b8bb26 !important; 
+	}
+	
+	/*labels  in the background */
+	/*button when inactive */
+	#labstabs .toggle .lab-switch .slider {
+    background-color: #cc241d;
+    transition: .4s;
+}
+	/*buttons wehn active */
+	#labstabs .toggle .lab-switch input.enabled + .slider {
+		background-color: #98971a !important ; 
+}
+	
+	/*Abstrat and icons and sgvs */
+	svg {
+		color : #b8bb26 !important ; 
+	}
+	
+	
+	
+	
+	
+	
+	
+	/*Form */
+	
+	form{
+		color : #fabd2f !important ; 
+	}
+	
+	/*info about the form actions */
+	dd { 
+	color : #83a598 !important ; 
+	}
+	
+	
+	/*Form Submit buttons */
+	input[type="submit" i] {
+	color : #fe8019 !important ; 
+		background: #282828 !important;
+		border: solid 2px  #d5c4a1 !important ;
+		border-radius: 5px !important ; 
+		padding : 0px 14px 0px 14px !important ;
+	}
+	
+	/*Font select */
+	select {
+	color : #b8bb26 !important ; 
+		background: #1d1b1a !important ; 
+		border : solid 2px !important ; 
+		padding : 2px 22px 2px 22px !important; 
+		border-radius: 5px !important ; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*HTNL MODE */
+	
+	/*Paper (html mode ) */
+	/*HTML */
+	
+		
+	
+	
+	
+	
+	
+	/*Header */
+	header {
+    background-color: #1d2021 !important ; 
+}
+	
+	/*Header links */
+	header .html-header-nav a {
+ 	color : #98971a !important ; 
+		font-family: "Harding text web Regular" !important ;
+		font-size: 12px !important ; 
+		
+	}
+	
+	/*Hover fixes for the header hover*/
+	header .html-header-nav a:hover {
+    text-decoration: none;
+    color: #98971a !important;
+}
+	
+	/*set the 0 opacity */
+	header .html-header-message p {
+opacity: 0 !important ; 
+}
+	
+	/*Hide the beta tag */
+	body::after {
+	opacity: 0 ; 
+	}
+	
+	
+	
+	/*Side bar designs */
+	
+	.ltx_page_main >.ltx_TOC {
+		background: #16181a !important ; 
+	}
+	
+
+	
+	
+	/*Arrow icons (background)  */
+	div#arrowIcon > svg {
+		fill : #8ec07c !important ;
+	}
+	
+	
+	
+	
+	
+	/*navigation title links div */
+	div.ltx_ref , .ltx_tocentry.ltx_tocentry_section{
+		background: #1a1b1d !important ;
+		border: solid 1px #3c3836 !important ; 
+		padding : 0px  !important ; 
+		border-radius: 9px !important ;
+	}
+	
+	/*Side bar navigation > LINKS */
+	.ltx_TOC>.ltx_toclist>.ltx_tocentry>a.ltx_ref {
+    color: #98971a !important;
+}
+	
+	/*Side bar navigation links hover */
+	.ltx_TOC>.ltx_toclist>.ltx_tocentry>a.ltx_ref:hover {
+    color: #fe8019 !important ; 
+		border : none !important ; 
+		background: none !important ; 
+		
+	}
+	
+	span.ltx_text.ltx_ref_title > span.ltx_tag.ltx_tag_ref{
+		color : #fb4934 !important ; 
+	}
+	
+	
+	
+	/*Author names */
+	span.ltx_personname {
+		color : #98971a !important ; 
+		font-family: "Margon360W08-Medium" !important ; 
+		font-weight : 600 !important ; 
+}
+	
+	
+	/*Bold text ?? */
+span.ltx_text.ltx_font_bold{
+	color : #7c6f64 !important ;
+	font-family: "Margon360W08-Medium" !important ; 
+}
+	
+	/*Author   Noets */
+	.ltx_author_notes {
+		color : #928374 !important ;
+		font-family: "Margon360W08-Medium"!important  ; 
+}
+	
+	/*Links for the books */
+	.ltx_font_typewriter {
+		font-size: 15px !important ; 
+		font-family: "CommitMono" !important ; 
+		
+}
+	
+	
+	/*Heading h6*/
+	/*Abstract heading */
+	.ltx_TOC>h6, .ltx_title_abstract {
+    color: #689d6a !important ; 
+		font-family: "Margon360W08-Medium"!important  ; 
+		font-weight : 800 !important ; 
+}
+	
+	/*h2 secondary heading */
+	h2.ltx_title.ltx_title_section{
+    color: #98971a !important ; 
+		font-family: "Margon360W08-Medium"!important  ; 
+		font-weight : 800 !important ; 
+
+	}
+	
+	
+	
+	
+	/*h3 secondary heading */
+		h3.ltx_title.ltx_title_subsection{
+    color: #fe8019 !important ; 
+		font-family: "Margon360W08-Medium"!important  ; 
+		font-weight : 800 !important ; 
+
+	}
+	
+	
+		/*h3 secondary heading */
+		h4.ltx_title.ltx_title_paragraph{
+    color: #98971a !important ; 
+		font-family: "Margon360W08-Medium"!important  ; 
+		font-weight : 800 !important ; 
+
+	}
+	
+	/*P tag text > html p tag font change */
+	.ltx_noindent>.ltx_p:first-child {
+		color : #d5c4a1 !important ;
+		font-family: "Margon360W08-Medium"!important  ; 
+		font-size: 1rem !important; 
+		
+}
+
+/*
+	Font that is italisized */
+	
+	.ltx_font_italic {
+		color : #8ec07c !important ; 
+    font-style: italic !important;
+		font-family: "Margon360W08-Medium"!important  ; 
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*citations */
+	span.ltx_text.ltx_font_bold {
+    color: #fe8019 !important;
+    font-family: "Margon360W08-Medium" !important;
+}
+
+	
+	/*REFERENCES */
+		.ltx_p>.ltx_ref, .ltx_cite>.ltx_ref{
+    color: #83a598 !important ;
+}
+	
+	/*hover for references */
+	.ltx_p>.ltx_ref:hover, .ltx_cite>.ltx_ref:hover {
+    color: #fe8019 !important ;
+		border :  solid 2px #79740e !important ; 
+		padding  :03px 23px 0px 23px !important ; 
+}
+	
+	
+	
+	
+	
+	/*Caption Under the image  */
+	
+	.ltx_figure .ltx_caption, .ltx_table .ltx_caption {
+color : #928374 !important ; 
+    font-family: "Margon360W08-Medium" !important;
+}
+	
+	
+	
+	
+	
+	/*Html tables */
+		
+	/*only td is working > tr and td dont do anything useful */
+		td {
+		color:#b8bb26 !important;
+		background: #1d1b1a !important ; 
+		border :  solid 2px #928374 !important ; 
+			padding : 0px 3px 0px 3px !important ; 
+	}
+	
+
+	
+	/*REFEERENCES */
+	
+	/*Back to refernce button */
+	/*References > button */
+	.back-to-reference-btn {
+    /* background-color: #ffffff; */
+    background:  #79740e !important;
+	color: #ffd29c !important;
+    border: 2px solid #ffd29c !important ;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    font-weight: 900 !important;
+    line-height: 1.25rem;
+    padding: .15rem 1rem !important;
+    text-align: center;
+}
+	/*References hover */
+	.back-to-reference-btn:hover{
+    /* background-color: #ffffff; */
+    background:  #427b58 !important;
+	color: #ffd29c !important;
+    border: 2px solid #ffd29c !important ;
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    font-weight: 900 !important;
+    line-height: 1.25rem;
+    padding: .1rem 2rem !important;
+    text-align: center;
+		transition: padding .4s ease-in-out, background .6s  ease-in-out !important ; 
+}
+	
+	/*References name */
+	/*Who the reference is from */
+	/*references source */
+	.ltx_tag.ltx_role_refnum.ltx_tag_bibitem {
+    color: #fe8019 !important;
+}
+	
+	/*bibtex color */
+	.ltx_bibitem  , .ltx_bibblock{
+		color:#83a598 !important;
+		background-color:#1a1b1d !important;
+		
+}
+	
+		/*Hover */
+	 .ltx_bibblock:hover{
+		color:#8ec07c !important;
+		background:#282828 !important;
+		 transition: color .6s ease-in-out , background  0.4s ease-in-out !important ; 
+		
+}
+	
+	
+	
+	/*Urls in the references */
+	/*References URL */
+	a.ltx_ref.ltx_url.ltx_font_typewriter {
+ 	color : #fb4934  !important ; 
+		font-family: "Margon360W08-Medium" !important;
+		padding : 0px 12px 0px 12px !important ;
+		font-weight: 500 !important ; 
+		text-decoration: none !important ;  
+	}
+	
+	/*Em on the paper names in the refereences */
+em.ltx_emph.ltx_font_italic{
+  color: #b8bb26 !important; 
+		font-family: "Margon360W08-Medium" !important;
+}
+	/*Hover styles for paper names in the references */
+	em.ltx_emph.ltx_font_italic:hover{
+  color: #b8bb26 !important; 
+		font-family: "Margon360W08-Medium" !important;
+		background : #1d1b1a !important ; 
+		border :  solid 1px #79740e !important  ; 
+		border-radius: 5px !important  ; 
+		padding  : 0rem 1.2rem !important ; 
+		transition: background 0.4s ease-in , padding 0.23s ease-in !important ; 
+		
+}
+	
+	
+	
+	
+	/*todos */
+	/*change the color of the references  */
+	
+	
+}
+	
+	
+	
+
