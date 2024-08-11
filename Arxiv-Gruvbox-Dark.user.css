@@ -1031,6 +1031,11 @@ em.ltx_emph.ltx_font_italic{
 	
 	
 	/*CATEGORY page*/
+	
+	
+	
+	
+	/*Search button */
 	input#adv-search-btn{
 
   background-color: #ffd29c !important;
@@ -1040,7 +1045,7 @@ em.ltx_emph.ltx_font_italic{
 
 	}
 
-/*Search button for the interface */
+/*Search button for the category page */
 	input#adv-search-btn:hover {
   /* Background color on hover */
   background-color: #fb4934 !important;
@@ -1051,10 +1056,23 @@ em.ltx_emph.ltx_font_italic{
 }
 	
 	
+	/*category page categories */
+	strong, b , li {
+		color : #928374 !important ; 
+    font-family: "Jetbrains Mono" !important;
+    font-weight: 800 !important;
+}
 	
 	
+	/*Home Search  */
 	
-	
+	.home-search {
+    clear: both;
+    border: 1px solid #b8bb26;
+	border-radius: 5px !important ; 
+    padding: .5em;
+    margin-top: 1em;
+}
 	
 	
 	
@@ -1073,6 +1091,8 @@ opacity : 0 !important ;
 	/*todos */
 	/*change the color of the references  */
 	
+	/*Link for the paper in which there is code which i can use to change the code styles later*/
+	/*https://arxiv.org/html/2408.04336v1*/
 	
 }
 	
